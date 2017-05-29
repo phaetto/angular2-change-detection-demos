@@ -7,7 +7,7 @@ import {toggleClass} from '../../toggle-class.service';
 @Component({
     selector: 'cmp-seven',
     template: `
-        <a>Cmp7 [Counter: {{i}}]</a>
+        <a class="timer">Cmp7 [Counter: {{i}}]</a>
 
         <ul>
             <li>
