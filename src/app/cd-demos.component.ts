@@ -5,6 +5,7 @@ import {Subject} from 'rxjs/Rx';
 
 import {DefaultChangeDetectionComponent} from './default-change-detection';
 import {OnPushChangeDetectionComponent} from './on-push-change-detection';
+import {OnPushChangeDetectionAdvancedComponent} from './on-push-change-detection-advanced';
 import {OnPushChangeDetectionObservablesComponent} from './on-push-change-detection-observables';
 import {ManualChangeDetectionComponent} from './manual-change-detection';
 
@@ -17,6 +18,7 @@ import {ManualChangeDetectionComponent} from './manual-change-detection';
 export class CdDemosAppComponent implements AfterViewChecked {
     @ViewChild(DefaultChangeDetectionComponent) defaultChangeDetectionCmp: DefaultChangeDetectionComponent;
     @ViewChild(OnPushChangeDetectionComponent) onPushChangeDetectionCmp: OnPushChangeDetectionComponent;
+	@ViewChild(OnPushChangeDetectionComponent) onPushChangeDetectionAdvancedCmp: OnPushChangeDetectionAdvancedComponent;
     @ViewChild(OnPushChangeDetectionObservablesComponent) onPushChangeDetectionObservablesCmp: OnPushChangeDetectionObservablesComponent;
     @ViewChild(ManualChangeDetectionComponent) manualChangeDetectionCmp: ManualChangeDetectionComponent;
 
@@ -37,6 +39,10 @@ export class CdDemosAppComponent implements AfterViewChecked {
 
         if (this.manualChangeDetectionCmp) {
             this.manualChangeDetectionCmp.notifier = this.notifier;
+        }
+
+        if (this.onPushChangeDetectionAdvancedCmp) {
+            this.onPushChangeDetectionAdvancedCmp.notifier = this.notifier;
         }
     }
 

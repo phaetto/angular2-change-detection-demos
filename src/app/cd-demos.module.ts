@@ -7,6 +7,7 @@ import {CdDemosAppComponent} from './cd-demos.component';
 import {DefaultChangeDetectionComponent, DefaultChangeDetectionModule} from './default-change-detection';
 import {ManualChangeDetectionComponent, ManualChangeDetectionModule} from './manual-change-detection';
 import {OnPushChangeDetectionComponent, OnPushChangeDetectionModule} from './on-push-change-detection';
+import {OnPushChangeDetectionAdvancedComponent, OnPushChangeDetectionAdvancedModule} from './on-push-change-detection-advanced';
 import {OnPushChangeDetectionObservablesComponent} from './on-push-change-detection-observables';
 import {OnPushChangeDetectionObservablesModule} from './on-push-change-detection-observables/on-push-change-detection-observables.module';
 
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
     {
         path: 'manual-change-detection',
         component: ManualChangeDetectionComponent
+    },
+    {
+        path: 'on-push-change-detection-advanced',
+        component: OnPushChangeDetectionAdvancedComponent
     }
 ];
 
@@ -45,7 +50,8 @@ const appRoutes: Routes = [
         DefaultChangeDetectionModule,
         ManualChangeDetectionModule,
         OnPushChangeDetectionModule,
-        OnPushChangeDetectionObservablesModule
+        OnPushChangeDetectionObservablesModule,
+		OnPushChangeDetectionAdvancedModule
     ],
     providers: [
         ToggleStateService,

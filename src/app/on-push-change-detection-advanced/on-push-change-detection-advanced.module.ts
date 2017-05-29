@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {OnPushChangeDetectionComponent} from './on-push-change-detection.component';
+import {OnPushChangeDetectionAdvancedComponent} from './on-push-change-detection-advanced.component';
 import {ComponentOne} from './component-one/component-one.component';
 import {ComponentTwo} from './component-two/component-two.component';
 import {ComponentThree} from './component-three/component-three.component';
@@ -20,7 +20,7 @@ import {ComponentSeventeen} from './component-seventeen/component-seventeen.comp
 
 @NgModule({
     declarations: [
-        OnPushChangeDetectionComponent,
+        OnPushChangeDetectionAdvancedComponent,
         ComponentOne,
         ComponentTwo,
         ComponentThree,
@@ -40,6 +40,6 @@ import {ComponentSeventeen} from './component-seventeen/component-seventeen.comp
         ComponentSeventeen
     ]
 })
-export class OnPushChangeDetectionModule {
+export class OnPushChangeDetectionAdvancedModule {
 
 }
